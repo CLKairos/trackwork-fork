@@ -18,6 +18,8 @@
   "block.trackwork.small_simple_wheel": "小型车轮",
   "block.trackwork.small_simple_wheel_part":"小型轮胎",
 
+  "block.trackwork.oleo_wheel":"油压减震轮",
+
   "block.trackwork.horn": "汽车喇叭",
   "block.trackwork.horn.tooltip.summary": "可通过红石信号激活，_右击_以设置音高。",
 
@@ -54,5 +56,12 @@
   "trackwork.ponder.wheels.text_3" : "从车轮内侧接入动力可驱动它旋转，",
   "trackwork.ponder.wheels.text_4" : "若无动力连接，车轮将进入空转模式。",
   "trackwork.ponder.wheels.text_5" : "输入红石信号可控制车轮的角度，",
-  "trackwork.ponder.wheels.text_6" : "对称位置的车轮会自动同步调整角度。"
+  "trackwork.ponder.wheels.text_6" : "对称位置的车轮会自动同步调整角度。",
+
+  "trackwork.ponder.oleo.header" : "油压减震轮系统搭建指南",
+  "trackwork.ponder.oleo.text_1" : "重要提示：油压减震轮仅能在已组装的瓦尔基里物理结构上运行！",
+  "trackwork.ponder.oleo.text_2" : "减震轮有两种类型的起落架变体 - 使用扳手可在两者之间切换。",
+  "trackwork.ponder.oleo.text_3" : "向方块的侧面施加红石信号以控制方向，",
+  "trackwork.ponder.oleo.text_4" : "向方块的前部或后部施加红石信号以制动。",
+  "trackwork.ponder.oleo.text_5" : "使用动态结构元件以在起飞后收起起落架。"
 }
