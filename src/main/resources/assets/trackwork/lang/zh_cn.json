@@ -1,4 +1,6 @@
 {
+  "itemGroup.trackwork": "驱动工艺",
+
   "block.trackwork.suspension_track": "悬挂式履带",
   "block.trackwork.med_suspension_track": "中型悬挂式履带",
   "block.trackwork.large_suspension_track" : "大型悬挂式履带",
@@ -18,12 +20,13 @@
   "block.trackwork.small_simple_wheel": "小型车轮",
   "block.trackwork.small_simple_wheel_part":"小型轮胎",
 
-  "block.trackwork.oleo_wheel":"油压减震轮",
+  "block.trackwork.med_simple_wheel.tooltip.summary" : "受紧凑型传动设计的影响，中型车轮的轮胎转速可以与大型车轮保持相同！",
+
+  "block.trackwork.oleo_wheel":"液压制动轮",
 
   "block.trackwork.horn": "汽车喇叭",
   "block.trackwork.horn.tooltip.summary": "可通过红石信号激活，_右击_以设置音高。",
 
-  "itemGroup.trackwork": "驱动工艺",
   "item.trackwork.track_tool_kit" : "修车工具包",
   "item.trackwork.track_tool_kit.tooltip.behaviour1" : "使悬挂更硬！_潜行调整_可软化悬挂。",
   "item.trackwork.track_tool_kit.tooltip.behaviour2" : "使悬挂的_弹性减弱_！_潜行调整_可使其弹性更强。",
@@ -33,16 +36,15 @@
   "item.trackwork.track_tool_kit.tooltip.condition3" : "使用电动扳手时：",
   "item.trackwork.track_tool_kit.tooltip.summary" : "集成车轮与履带调试功能的便携工具包，一包搞定所有调整需求！",
 
-  "block.trackwork.med_simple_wheel.tooltip.summary" : "受紧凑型传动设计的影响，中型车轮的轮胎转速可以与大型车轮保持相同！",
-
-  "death.attack.trackwork.run_over" : "%1$s被碾成了贴图",
-  "death.attack.trackwork.run_over.player" : "%1$s被%2$s踢到了车轮下方",
-
   "subtitle.trackwork.ambient.track.sprocket" : "履带：链轮转动",
   "subtitle.trackwork.ambient.track.ground" : "履带：撞击地面",
   "subtitle.trackwork.ambient.wheel.ground" : "车轮：滚动",
+  "subtitle.trackwork.suspension_creak" : "悬挂：嘎吱",
   "subtitle.trackwork.spring_tool" : "更换工具",
   "subtitle.trackwork.honk" : "喇叭声",
+
+  "death.attack.trackwork.run_over" : "%1$s被碾成了贴图",
+  "death.attack.trackwork.run_over.player" : "%1$s被%2$s踢到了车轮下方",
 
   "trackwork.ponder.tracks.header" : "履带系统搭建指南",
   "trackwork.ponder.tracks.text_1" : "重要提示：履带仅能在已组装的瓦尔基里物理结构上运行！",
@@ -58,8 +60,8 @@
   "trackwork.ponder.wheels.text_5" : "输入红石信号可控制车轮的角度，",
   "trackwork.ponder.wheels.text_6" : "对称位置的车轮会自动同步调整角度。",
 
-  "trackwork.ponder.oleo.header" : "油压减震轮系统搭建指南",
-  "trackwork.ponder.oleo.text_1" : "重要提示：油压减震轮仅能在已组装的瓦尔基里物理结构上运行！",
+  "trackwork.ponder.oleo.header" : "液压制动轮系统搭建指南",
+  "trackwork.ponder.oleo.text_1" : "重要提示：液压制动轮仅能在已组装的瓦尔基里物理结构上运行！",
   "trackwork.ponder.oleo.text_2" : "减震轮有两种类型的起落架变体 - 使用扳手可在两者之间切换。",
   "trackwork.ponder.oleo.text_3" : "向方块的侧面施加红石信号以控制方向，",
   "trackwork.ponder.oleo.text_4" : "向方块的前部或后部施加红石信号以制动。",

@@ -1,4 +1,6 @@
 {
+  "itemGroup.trackwork": "Trackwork",
+
   "block.trackwork.suspension_track": "Suspension Track",
   "block.trackwork.med_suspension_track": "Medium Suspension Track",
   "block.trackwork.large_suspension_track" : "Large Suspension Track",
@@ -18,12 +20,13 @@
   "block.trackwork.small_simple_wheel": "Small Wheel",
   "block.trackwork.small_simple_wheel_part":"Small Spare Tire",
 
+  "block.trackwork.med_simple_wheel.tooltip.summary" : "Proprietary Final Drive technology allows this to reach the same speeds as the larger wheel!",
+
   "block.trackwork.oleo_wheel":"Oleo Wheel",
 
   "block.trackwork.horn": "Car Horn",
   "block.trackwork.horn.tooltip.summary": "Activates via redstone, _right click_ to set the pitch.",
 
-  "itemGroup.trackwork": "Trackwork",
   "item.trackwork.track_tool_kit" : "Track Toolkit",
   "item.trackwork.track_tool_kit.tooltip.behaviour1" : "Makes the suspension stiffer! _Sneak_ to make it less stiff.",
   "item.trackwork.track_tool_kit.tooltip.behaviour2" : "Makes the track suspension _less bouncy_! _Sneak_ to make it bouncier.",
@@ -33,16 +36,15 @@
   "item.trackwork.track_tool_kit.tooltip.condition3" : "When the power wrench is used,",
   "item.trackwork.track_tool_kit.tooltip.summary" : "Multiple tools for working with tracks, packed into one convenient kit!",
 
-  "block.trackwork.med_simple_wheel.tooltip.summary" : "Proprietary Final Drive technology allows this to reach the same speeds as the larger wheel!",
-
-  "death.attack.trackwork.run_over" : "%1$s became roadkill",
-  "death.attack.trackwork.run_over.player" : "%1$s was thrown under the bus by %2$s",
-
   "subtitle.trackwork.ambient.track.sprocket" : "Tracks squeak",
   "subtitle.trackwork.ambient.track.ground" : "Tracks crunch",
   "subtitle.trackwork.ambient.wheel.ground" : "Wheels roll",
+  "subtitle.trackwork.suspension_creak" : "Suspension creaks",
   "subtitle.trackwork.spring_tool" : "Spring tool",
   "subtitle.trackwork.honk" : "Horn sound",
+
+  "death.attack.trackwork.run_over" : "%1$s became roadkill",
+  "death.attack.trackwork.run_over.player" : "%1$s was thrown under the bus by %2$s",
 
   "trackwork.ponder.tracks.header" : "Building Tracks 101",
   "trackwork.ponder.tracks.text_1" : "Disclaimer: Tracks only work on assembled VS2 ships!",
