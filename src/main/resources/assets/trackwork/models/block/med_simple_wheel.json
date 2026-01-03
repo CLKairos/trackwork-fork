@@ -6,7 +6,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"6": "trackwork:block/med_tyre",
-		"particle": "trackwork:block/gold_hubcap_large"
+		"particle": "trackwork:block/med_tyre"
 	},
 	"elements": [
 		{
