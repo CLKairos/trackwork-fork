@@ -213,7 +213,16 @@ public class WheelBlockEntity extends KineticBlockEntity {
                 this.steeringValue = Mth.lerp(steeringSpeed, this.steeringValue, targetSteeringValue);
 
                 float deltaSteeringValue = oldSteeringValue - this.steeringValue;
-                this.onLinkedWheel(wbe -> wbe.setLinkedSteeringValue(this.steeringValue));
+
+                // Flush linked val & propagate when pair target empty
+                if (bestSignal > 0) this.linkedSteeringValue = 0f;
+                this.onLinkedWheel(wbe -> {
+                    int linkedSignal = this.level.getBestNeighborSignal(wbe.getBlockPos());
+                    if (linkedSignal == 0) {
+                        wbe.setLinkedSteeringValue(this.steeringValue);
+                    }
+                });
+
                 SimpleWheelController controller = SimpleWheelController.getOrCreate(ship);
                 SimpleWheelData.SimpleWheelUpdateData data = new SimpleWheelData.SimpleWheelUpdateData(
                         this.getSteeringValue(),
