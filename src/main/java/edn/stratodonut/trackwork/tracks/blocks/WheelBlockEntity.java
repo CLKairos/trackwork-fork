@@ -185,7 +185,17 @@ public class WheelBlockEntity extends KineticBlockEntity {
         Direction dir = this.getBlockState().getValue(HORIZONTAL_FACING);
         BlockPos innerBlock = this.getBlockPos().relative(dir);
         BlockState innerState = this.level.getBlockState(innerBlock);
-        if (innerState.getBlock() instanceof KineticBlock ke && ke.hasShaftTowards(level, this.getBlockPos(), innerState, dir.getOpposite())) {
+        boolean hasKineticConnection = false;
+        Direction.Axis wheelAxis = dir.getAxis();
+
+        if (innerState.getBlock() instanceof KineticBlock ke) {
+            boolean hasShaft = ke.hasShaftTowards(level, this.getBlockPos(), innerState, dir.getOpposite());
+            //Axis check for Belted shaft (they don't count as "shaft" shaft)
+            boolean compatibleAxis = ke.getRotationAxis(innerState) == wheelAxis;
+            hasKineticConnection = hasShaft || compatibleAxis;
+        }
+
+        if (hasKineticConnection) {
             isFreespin = false;
         } else {
             isFreespin = true;
