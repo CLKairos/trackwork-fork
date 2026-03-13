@@ -101,6 +101,8 @@ public class TrackToolkit extends Item {
                         if (ship == null) return InteractionResult.FAIL;
                         owbe.setOffset(VectorConversionsMCKt.toJOML(context.getClickLocation().subtract(Vec3.atCenterOf(context.getClickedPos()))),
                                 context.getClickedFace());
+
+                        return InteractionResult.SUCCESS;
                     }
                 }
                 case STIFFNESS -> {
