@@ -187,7 +187,7 @@ public class WheelBlockEntity extends KineticBlockEntity {
         Direction dir = this.getBlockState().getValue(HORIZONTAL_FACING);
         BlockPos innerBlock = this.getBlockPos().relative(dir);
         BlockState innerState = this.level.getBlockState(innerBlock);
-        if (innerState.getBlock() instanceof KineticBlock ke && ke.hasShaftTowards(level, this.getBlockPos(), innerState, dir.getOpposite())) {
+        if (innerState.getBlock() instanceof KineticBlock ke && ke.hasShaftTowards(level, innerBlock, innerState, dir.getOpposite())) {
             isFreespin = false;
         } else {
             isFreespin = true;
